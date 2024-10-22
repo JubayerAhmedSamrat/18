@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="mx-20">
+    <h1 class="text-center text-5xl">Hi this is from taka poisa branch</h1>
+    <section class="grid grid-cols-3 gap-10 mt-20">
+      <div class="bg-yellow-600 h-[200px] rounded-lg">
+        <h2 class="text-center text-3xl text-white pt-10">Deposite</h2>
+        <p  class="text-center text-white text-2xl mt-5">$ <span id="depositPara">00</span></p>
+      </div>
+      <div class="bg-green-600 h-[200px] rounded-lg">
+        <h2 class="text-center text-white text-3xl pt-10">Total</h2>
+        <p class="text-center text-white text-2xl mt-5">$ <span id="totalPara">1000</span></p>
+      </div>
+      <div class="bg-pink-600 h-[200px] rounded-lg">
+        <h2 class="text-center text-white text-3xl pt-10">Withdraw</h2>
+        <p class="text-center text-white text-2xl mt-5">$00</p>
+      </div>
+    </section>
+    <!-- button section---------------------------------------------------------------------- -->
+    <section class="mt-20 flex gap-20  ">
+      <div>
+        <input id="depositIn" class="h-10 w-[350px] border-2 border-red-400" type="text" placeholder="Enter amount..." />
+        <button
+          id="deposit"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Deposit
+        </button>
+      </div>
+      <div>
+        <input id="withdrawIn" class="h-10 w-[350px] border-2 border-red-400" type="text" placeholder="Enter amount..." />
+        <button
+          id="withdraw"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Withdraw
+        </button>
+      </div>
+    </section>
+    <script src="./js/takaPoisa.js"></script>
+  </body>
+</html>

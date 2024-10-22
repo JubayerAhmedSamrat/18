@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator with html css js</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="border-2 bg-orange-500 h-[100vh]">
+    <!-- summation --------------------------------------------------------------------------------------------------------------- -->
+    <section class="h-10 flex justify-center items-center mt-32">
+      <div>
+        <input class="rounded-lg" type="text" id="firstPnum" /> <span class="text-2xl">+</span>
+        <input class="rounded-lg" type="text" id="secondPnum" /> <span class="text-2xl">=</span>
+        <p class="inline-block text-2xl " id="positivePara">0</p>
+      </div>
+    </section>
+    <!-- submit button----------------------------------------------------------------------------------------------------- -->
+    <section class="flex justify-center">
+      <button
+        id="sum"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Summation
+      </button>
+    </section>
+    <!-- subtraction --------------------------------------------------------------------------------------------------------------- -->
+    <section class="h-10 flex justify-center items-center">
+      <div>
+        <input class="rounded-lg" type="text" id="firstNnum" /> <span class="text-2xl">-</span>
+        <input class="rounded-lg" type="text" id="secondNnum" /> <span class="text-2xl">=</span>
+        <p class="inline-block text-2xl" id="negativePara">0</p>
+      </div>
+    </section>
+    <!-- submit button----------------------------------------------------------------------------------------------------- -->
+    <section class="flex justify-center">
+      <button
+        id="sub"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Subtraction
+      </button>
+    </section>
+    <!-- Multiplication --------------------------------------------------------------------------------------------------------------- -->
+    <section class="h-10 flex justify-center items-center">
+      <div>
+        <input class="rounded-lg" type="text" id="firstMnum" /> <span class="text-2xl">*</span>
+        <input class="rounded-lg" type="text" id="secondMnum" /> <span class="text-2xl">=</span>
+        <p class="inline-block text-2xl" id="multiplyPara">0</p>
+      </div>
+    </section>
+    <!-- submit button----------------------------------------------------------------------------------------------------- -->
+    <section class="flex justify-center">
+      <button
+        id="mul"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Multiplication
+      </button>
+    </section>
+    <!-- Division --------------------------------------------------------------------------------------------------------------- -->
+    <section class="h-10 flex justify-center items-center">
+      <div>
+        <input class="rounded-lg" type="text" id="firstDnum" /> <span class="text-2xl">/</span>
+        <input class="rounded-lg" type="text" id="secondDnum" /> <span class="text-2xl">=</span>
+        <p class="inline-block text-2xl" id="dividePara">0</p>
+      </div>
+    </section>
+    <!-- submit button----------------------------------------------------------------------------------------------------- -->
+    <section class="flex justify-center">
+      <button
+        id="div"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Division
+      </button>
+    </section>
+    <!-- Modulus --------------------------------------------------------------------------------------------------------------- -->
+    <section class="h-10 flex justify-center items-center">
+      <div>
+        <input class="rounded-lg" type="text" id="firstModNum" /> <span class="text-2xl">%</span>
+        <input class="rounded-lg" type="text" id="secondModNum" /> <span class="text-2xl">=</span>
+        <p class="inline-block text-2xl" id="modPara">0</p>
+      </div>
+    </section>
+    <!-- submit button----------------------------------------------------------------------------------------------------- -->
+    <section class="flex justify-center">
+      <button
+        id="mod"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Modulus
+      </button>
+    </section>
+
+    <script src="./calculator.js"></script>
+  </body>
+</html>
