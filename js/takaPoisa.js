@@ -3,7 +3,7 @@ let totalTk = parseInt(document.getElementById('totalPara').innerText);
 document.getElementById('deposit').addEventListener('click', function(){
     
     const depositInput = parseInt(document.getElementById('depositIn').value);
-    if(isNaN(depositInput)){
+    if(isNaN(depositInput) && depositInput > 0){
         document.getElementById('deposit').setAttribute('disabled', true);
         document.getElementById('deposit').classList.remove('hover:bg-blue-700');
 
